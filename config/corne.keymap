@@ -9,6 +9,20 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Caps {
+            bindings = <&kp CAPS>;
+            key-positions = <24 35>;
+        };
+
+        Win {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <38 39>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
